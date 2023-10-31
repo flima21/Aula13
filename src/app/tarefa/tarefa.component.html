@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let index of tarefas" [ngStyle]="{'text-decoration': index.statusTarefa ? 'line-through' : ''}">{{ index.nomeTarefa }} 
+        <button class="btn btn-primary" type ="submit" (click) ="onChange(index)">{{index.txtBotao}}</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
